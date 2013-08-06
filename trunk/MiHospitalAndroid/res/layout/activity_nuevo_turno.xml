@@ -1,0 +1,164 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+       
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/nombreMedico"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:ems="6"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/medico"
+                android:textColor="#2ECCFA" />
+
+            <Spinner
+                android:id="@+id/historialMedicos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:prompt="@string/seleccionHistorial"
+                android:text="@string/seleccionHistorial" />
+            
+             <Button
+	            android:id="@+id/buttonCartilla2"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:layout_marginLeft="10dp"
+	            android:onClick="iniciarBusquedaMedicos"
+	            android:text="@string/verCartilla"
+	            android:textColor="@color/textLabel" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/sucursal"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:ems="10"
+                android:text="@string/sucursal"
+                android:textColor="#2ECCFA" />
+
+            <Spinner
+                android:id="@+id/sucursalMedico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:prompt="@string/sucursal_prompt" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tituloHorarioAtencion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:text="@string/horarioAtencion"
+            android:textColor="#2ECCFA" />
+
+        <TextView
+            android:id="@+id/horarioAtencionDinamico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/horariodeatenciondinamico"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/duracionTurnos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:text="@string/duracionTurnos"
+            android:textColor="#2ECCFA" />
+
+        <TextView
+            android:id="@+id/duracionTurnosDinamico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/duracionTurnos"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/fechaLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/fecha"
+                android:textColor="#2ECCFA"
+                android:textSize="20sp" />
+            <!-- TODO: cargar el texto dinamicamente con la fecha seleccionada -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/anterior"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text="@string/anterior_mes" />
+
+            <CalendarView
+                android:id="@+id/calendarView1"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:theme="@android:style/Theme.Black" />
+
+            <Button
+                android:id="@+id/siguiente"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text="@string/siguiente_mes" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="20dp"
+            android:background="@layout/header_gradient"
+            android:gravity="right" >
+
+            <Button
+                android:id="@+id/buscarTurno"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Ver Disponibilidad"
+                android:textColor="@color/textLabel" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

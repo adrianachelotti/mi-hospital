@@ -1,0 +1,121 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/login_form"
+  android:fillViewport="true">
+  <LinearLayout 
+  		 android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:padding="5dp"
+         android:background="#000000">
+  		
+  		
+
+  		
+	<!-- Link to Registration Screen -->
+		  
+
+		  
+		  
+		    
+    <LinearLayout
+        android:id="@+id/login_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/login_status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/login_progress_signing_in"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+  		
+  		<!-- Login Form -->
+		<LinearLayout
+		  
+		  android:orientation="vertical"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:padding="10dip">
+		  <!--  Email Label -->
+		  <TextView android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#2ECCFA"
+		  		android:text="@string/login_dni"/>
+
+		  <EditText
+		      android:id="@+id/nroDocumentoPaciente"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_marginBottom="20dip"
+		      android:layout_marginTop="5dip"
+		      android:singleLine="true"
+		      android:textColor="@color/textLabel" />
+
+		  <!--  Password Label -->
+		  <TextView android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#2ECCFA"
+		  		android:text="@string/login_clave"/>
+
+		  <EditText
+		      android:id="@+id/clavePaciente"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_marginTop="5dip"
+		      android:inputType="textPassword"
+		      android:singleLine="true"
+		      android:textColor="@color/textLabel" />
+
+		 
+
+		  
+		</LinearLayout>
+		
+		<LinearLayout
+  		    android:id="@+id/footer"
+  		    android:layout_width="fill_parent"
+  		    android:layout_height="50dip"
+		    android:layout_marginTop="10dip"
+  		    android:background="@layout/header_gradient" >
+  		    
+  		     <!-- Login button -->
+
+		  <Button
+		      android:id="@+id/btnLogin"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:text="@string/login_ingrese" />
+
+  				
+  		</LinearLayout>
+  		<!-- Login Form Ends --> 		
+  		
+  		<TextView
+		      android:id="@+id/link_to_register"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_marginBottom="20dip"
+		      android:layout_marginTop="20dip"
+		      android:gravity="center"
+		      android:text="@string/ingrese_aqui"
+		      android:textColor="#0b84aa"
+		      android:textSize="20sp" />
+		  
+  		
+  </LinearLayout>
+</ScrollView>

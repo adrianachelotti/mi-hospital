@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.mihospital.loginandregister"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <permission
+        android:name="com.android.mihospital.loginandregister.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- External storage for caching. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- My Location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <!-- Maps API needs OpenGL ES 2.0. -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:hasCode="true"
+        android:icon="@drawable/icon33"
+        android:label="@string/app_name" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCYA004JHtkZ6y7DSn3EMNlyvrE03N7vS8" />
+
+        <activity
+            android:name="com.android.mihospital.login.LoginActivity"
+            android:label="Mi Hospital"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Entry for RegisterActivity.class -->
+        <activity
+            android:name="com.android.mihospital.registracion.RegisterActivity"
+            android:label="Registrate"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.android.mihospital.login.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.android.mihospital.consultapaciente.DetallePacienteActivity"
+            android:label="@string/title_activity_informacion_personal"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.android.mihospital.login.UsuarioRegistradoActivity"
+            android:label="@string/title_activity_usuario_registrado" >
+        </activity>
+        <activity
+            android:name="com.android.mihospital.consultamedico.DetalleMedicoActivity"
+            android:label="@string/title_activity_medic_detail" >
+        </activity>
+        <activity
+            android:name="com.android.mihospital.consultamedico.BusquedaMedicoActivity"
+            android:label="@string/title_activity_medic_search" >
+        </activity>
+        <activity
+            android:name="com.android.mihospital.consultamedico.FiltroBusquedaMedicosActivity"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.android.mihospital.consultamedico.MapActivity"
+            android:label="@string/title_activity_map_activity" >
+        </activity>
+        <activity
+            android:name="com.android.mihospital.consultamedico.MapViewActivity"
+            android:label="@string/title_activity_map_view" >
+        </activity>
+        <activity
+            android:name="com.android.mihospital.consultamedico.SelectRoute"
+            android:label="@string/title_activity_select_route" >
+        </activity>
+        <activity
+            android:name="com.android.mihospital.turnos.NuevoTurnoActivity"
+            android:label="@string/title_activity_nuevo_turno" >
+        </activity>
+        <activity
+            android:name="com.android.mihospital.turnos.ListadoDeTurnosDisponiblesActivity"
+            android:label="@string/title_activity_seleccionar_horario" >
+        </activity>
+        <activity
+            android:name="com.android.mihospital.turnos.DetalleTurnoActivity"
+            android:label="@string/title_activity_detalle_turno" >
+        </activity>
+        <activity
+            android:name="com.android.mihospital.turnos.HistorialDeTurnosActivity"
+            android:label="@string/title_activity_historial_turnos" >
+        </activity>
+        <activity
+            android:name="com.android.mihospital.mensajes.MensajesActivity"
+            android:label="@string/title_activity_mensajes"
+            android:parentActivityName="android.app.ListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.ListActivity" />
+        </activity>
+        <activity
+            android:name="com.android.mihospital.loginandregister.MessagesActivity"
+            android:label="@string/title_activity_messages" >
+        </activity>
+        <activity
+            android:name="com.android.mihospital.loginandregister.DetalleTurnoSolicitadoActivity"
+            android:label="@string/title_activity_detalle_turno_solicitado" >
+        </activity>
+        <activity
+            android:name="com.android.mihospital.loginandregister.DetalleEstudioMedicoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_detalle_estudio_medico"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name="com.android.mihospital.loginandregister.HistoriaClinicaActivity"
+            android:label="@string/title_activity_historia_clinica" >
+        </activity>
+        <activity
+            android:name="com.android.mihospital.loginandregister.DetalleRecetaActivity"
+            android:label="@string/title_activity_detalle_receta" >
+        </activity>
+        <activity
+            android:name="com.android.mihospital.loginandregister.HistorialTurnosExpandibleActivity"
+            android:label="@string/title_activity_historial_turnos_expandible" >
+        </activity>
+        <receiver android:name="com.android.mihospital.mensajes.MessagePoolingReciever" >
+        </receiver>
+    </application>
+
+</manifest>

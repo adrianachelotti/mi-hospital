@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mi Hospital</string>
+    <string name="login_clave">Clave</string>
+    <string name="login_dni">DNI</string>
+    <string name="login_ingrese">Ingresar</string>
+    <string name="ingrese_aqui">Eres nuevo? Registrate aquí</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="home_mis_datos">Mis Datos</string>
+    <string name="home_cartilla_medica">Cartilla Médica</string>
+    <string name="info_perfil">Información Personal</string>
+    <string name="nombre_completo">Nombre Completo</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="email">Email</string>
+    <string name="fecha_nacimiento">Fecha de Nacimiento</string>
+    <string name="modificar">Guardar</string>
+    <string name="volver">Volver</string>
+    <string name="ya_registrado">Usted se ha registrado de forma éxitosa Ingresar</string>
+    <string name="title_activity_home">Home</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_informacion_personal">Datos Personales</string>
+    <string name="title_activity_usuario_registrado">UsuarioRegistrado</string>
+    <string name="campo_obligatorio">Campo Obligatorio</string>
+    <string name="nro_documento_invalido">Dni inválido</string>
+    <string name="clave_invalida">Clave inválida, min. 4 caracteres</string>
+    <string name="login_progress_signing_in">login_progress_signing_in</string>
+    <string name="error_login">Error en el acceso.</string>
+    <string name="domicilio">Domicilio</string>
+    <string name="telefono">Telefono</string>
+    <string name="afiliado">N° Afiliado</string>
+    <string name="dni">DNI</string>
+    <string name="obraSocial">Obra Social</string>
+    <string name="provincia">Provincia</string>
+    <string name="pais">País</string>
+    <string name="salir">Salir</string>
+    <string name="usuarioExit">Gracias por usar nuestros servicios!</string>
+    <string name="nacionalidad">Nacionalidad</string>
+    <string name="sexo">Sexo</string>
+    <string name="localidad">Localidad</string>
+    <string name="fecha_formato">dd/mm/aaaa</string>
+    <string name="fem_masc">Femenino/Masculino</string>
+    <string name="provincia_prompt">Seleccione</string>
+
+    <string-array name="prov_arrays">
+        <item>BUENOS AIRES</item>
+        <item>CABA</item>
+        <item>CATAMARCA</item>
+        <item>CHACO</item>
+        <item>CHUBUT</item>
+        <item>CORDOBA</item>
+        <item>CORRIENTES</item>
+        <item>ENTRE RIOS</item>
+        <item>FORMOSA</item>
+        <item>CATAMARCA</item>
+        <item>JUJUY</item>
+        <item>LA PAMPA</item>
+        <item>LA RIOJA</item>
+        <item>MENDOZA</item>
+        <item>MISIONES</item>
+        <item>NEUQUEN</item>
+        <item>RIO NEGRO</item>
+        <item>SALTA</item>
+        <item>SAN JUAN</item>
+        <item>SALTA</item>
+        <item>SAN LUIS</item>
+        <item>SANTA CRUZ</item>
+        <item>SANTIAGO DEL ESTERO</item>
+        <item>TIERRA DEL FUEGO</item>
+        <item>TUCUMAN</item>
+    </string-array>
+    <string-array name="sucursal_arrays">
+        <item>Todas</item>
+        <item>Barracas</item>
+        <item>Belgrano</item>
+        <item>Caseros</item>
+    </string-array>
+
+    <string name="limpiar_map">Borrar</string>
+    <string name="ver_map">Ver</string>
+    <string name="default_info_window">Posición Actual</string>
+    <string name="map_not_ready">Mapa no listo</string>
+    <string name="modo1">En auto</string>
+    <string name="modo2">Caminando</string>
+    <string name="title_activity_map_activity">Como llego?</string>
+    <string name="desde">Desde</string>
+    <string name="hasta">Hasta</string>
+    <string name="como_llegar">Como llegar</string>
+    <string name="title_activity_map_view">Como llego?</string>
+    <string name="sucursal_prompt">Seleccione</string>
+    <string name="sucursal">Sucursal</string>
+    <string name="title_activity_medic_detail">Detalle de Médico</string>
+    <string name="dias_atencion">Días</string>
+    <string name="detalle_medico">Consultar Cartilla</string>
+    <string name="direccionDinamica">Direccion del médico</string>
+    <string name="cancelTurno">Cancelar Turno</string>
+    <string name="especialidadDinamica">Especialidad</string>
+    <string name="horariodeatenciondinamico">horario de atencion del médico</string>
+    <string name="title_activity_medic_search">Cartilla Médica</string>
+    <string name="elegirFiltros">Elegir Filtros</string>
+    <string name="buscar">Buscar</string>
+    <string name="buscarDisponibilidad">Buscar</string>
+    <string name="lunes">Lun.</string>
+    <string name="martes">Mar.</string>
+    <string name="miercoles">Miér.</string>
+    <string name="jueves">Jue.</string>
+    <string name="viernes">Vier.</string>
+    <string name="sabado">Sab.</string>
+    <string name="domingo">Dom.</string>
+    <string name="title_activity_select_route">Seleccione una Ruta</string>
+    <string name="pos_actual">Posición Actual</string>
+    <string name="mi_casa">Mi casa</string>
+    <string name="como">Como?</string>
+    <string name="cal_ruta">Calcular Ruta</string>
+    <string name="resultados">Resultados</string>
+    <string name="duracionTurnos">Duración del Turno</string>
+    <string name="title_activity_nuevo_turno">Nuevo Turno</string>
+    <string name="verCartilla">Ver \n Cartilla</string>
+    <string name="solicitarTurno">Buscar</string>
+    <string name="solicitarTurnoMed">Solicitar Turno</string>
+    <string name="solicitarTurnoHome">Nuevo Turno</string>
+    <string name="medico">Médico</string>
+    <string name="seleccionHistorial">"Seleccione uno del historial "</string>
+    <string name="horarioAtencion">"Horarios de Atención"</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="horaTurno">Fecha y Hora</string>
+    <string name="siguiente_mes">&gt;</string>
+    <string name="anterior_mes">&lt;</string>
+    <string name="direccion">Dirección</string>
+    <string name="duracion">Duración</string>
+    <string name="title_activity_programar_alarma">Programar Alarma</string>
+    <string name="programar">Programar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="fecha">Seleccionar Fecha</string>
+    <string name="title_activity_seleccionar_horario">Seleccionar Horario</string>
+    <string name="title_activity_historial_turnos">Historial de Turnos</string>
+    <string name="title_activity_detalle_turno">Detalle de Turno</string>
+    <string name="title_activity_mensajes">Mensajes</string>
+    <string name="title_activity_messages">Mensajes</string>
+    <string name="title_activity_detalle_turno_solicitado">Detalle del Turno</string>
+    <string name="setAlarm">Crear Alarma</string>
+    <string name="cancelado">Cancelado por el médico</string>
+    <string name="title_activity_historia_clinica">Mi Historia Clínica</string>
+    <string name="title_section1">Estudios</string>
+    <string name="title_section2">Recetas</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_detalle_estudio_medico">Estudio Médico</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_detalle_receta">Medicamento Recetado</string>
+    <string name="medicamento">Medicamento:</string>
+    <string name="posologia">Posología:</string>
+    <string name="recetado">Recetado:</string>
+    <string name="formato">Detalle:</string>
+    <string name="unidades">Unidades:</string>
+    <string name="cantidadDroga">Cantidad de droga:</string>
+    <string name="title_activity_historial_turnos_expandible">Historial de turnos</string>
+
+</resources>

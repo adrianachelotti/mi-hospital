@@ -1,0 +1,149 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#000000"
+      android:orientation="vertical" >
+
+      
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/nombreMedico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/imagenMedico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="50dp"
+            android:maxWidth="50dp"
+            android:src="@drawable/ic_launcher" />
+
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/tituloEspecialidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/nombreMedico"
+        android:ems="10"
+        android:text="Especialidad"
+        android:textColor="#2ECCFA" />
+
+    <TextView
+        android:id="@+id/especialidadDinamica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tituloEspecialidad"
+        android:text="@string/especialidadDinamica"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tituloHorarioAtencion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/direccionDinamica"
+        android:ems="10"
+        android:text="Horario de Atención"
+        android:textColor="#2ECCFA" />
+
+    <TextView
+        android:id="@+id/horarioAtencionDinamico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/horariodeatenciondinamico"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tituloEmail"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dip"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Email"
+        android:textColor="#2ECCFA" />
+
+    <TextView
+        android:id="@+id/direccionDinamica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/direccionDinamica"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/duracionTurnos"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/horarioAtencionDinamico"
+        android:ems="10"
+        android:text="@string/duracionTurnos"
+        android:textColor="#2ECCFA" />
+
+    <TextView
+        android:id="@+id/duracionTurnosDinamico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/duracionTurnos"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/buttonMap"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_height="wrap_content"
+        android:text="@string/como_llegar"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="20dip"
+        android:background="@layout/header_gradient" >
+
+        
+        <Button
+            android:id="@+id/solicitarTurno"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/solicitarTurnoMed" />
+    </LinearLayout>
+  
+  </LinearLayout>
+  
+  
+  
+  
+</ScrollView>
+
+
+
+
+
+    

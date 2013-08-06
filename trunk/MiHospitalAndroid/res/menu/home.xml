@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/salir_button" android:title="Salir"></item>
+    <item android:id="@+id/about" android:title="Acerca de Nosotros" />
+	<item android:id="@+id/help" android:title="Ayuda" />
+
+</menu>

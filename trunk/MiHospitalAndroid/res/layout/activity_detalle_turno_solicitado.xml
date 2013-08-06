@@ -1,0 +1,146 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- Header  Starts -->
+
+
+        <!-- <requestFocus /> -->
+	<TextView
+            android:id="@+id/medico"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Detalle de Turno Con:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#2ECCFA" />
+
+		 <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/nombreCompletoMedico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/imagenMedico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="50dp"
+            android:maxWidth="50dp"
+            android:src="@drawable/ic_launcher" />
+
+    </LinearLayout>
+
+        
+
+     <!--    <TextView
+            android:id="@+id/nombreCompletoMedico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_completo"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+ -->
+
+        <TextView
+            android:id="@+id/tituloHorarioAtencion"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="@string/horaTurno"
+            android:textColor="#2ECCFA" />
+
+        <TextView
+            android:id="@+id/horarioAtencionDinamico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="@string/horaTurno"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/sucursal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="@string/direccion"
+            android:textColor="#2ECCFA" />
+
+        <TextView
+            android:id="@+id/direccionDinamica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="@string/direccionDinamica"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/especialidadMedico"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/horarioAtencionDinamico"
+            android:ems="10"
+            android:text="Especialidad"
+            android:textColor="#2ECCFA" />
+
+        <TextView
+            android:id="@+id/especialidadDinamico"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_height="wrap_content"
+            android:text="Especialidad del medico"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+         <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:layout_marginTop="20dip"
+        android:layout_gravity="bottom"
+        android:background="@layout/header_gradient"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/setAlarmButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="setAlarm"
+            android:text="@string/setAlarm" />
+        
+        <Button
+            android:id="@+id/cancelButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancelTurno" />
+        
+        
+
+   		 </LinearLayout>
+        
+        
+    </LinearLayout>
+
+</ScrollView>

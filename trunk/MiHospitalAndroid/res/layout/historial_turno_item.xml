@@ -1,0 +1,55 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="left|center"
+    android:orientation="horizontal"
+    android:paddingBottom="5px"
+    android:paddingLeft="5px"
+    android:paddingTop="5px" >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/nombreMedico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nombremedico" />
+
+        <TextView
+            android:id="@+id/especialidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nombremedico" />
+
+        <TextView
+            android:id="@+id/sucursal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:text="Especialidad"
+            android:textColor="#0099CC" />
+
+        <TextView
+            android:id="@+id/fechaHorario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:textColor="#00FF00" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewCancelado"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="@string/cancelado"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:visibility="gone" >
+
+    </TextView>
+</LinearLayout>
