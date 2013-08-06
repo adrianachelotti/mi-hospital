@@ -1,0 +1,56 @@
+
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="fill_parent"
+      android:background="#000000"
+      android:orientation="vertical" >
+
+      <!-- Header  Starts -->
+
+     
+      <!-- Header Ends -->
+        <!---android:inputType="textPersonName" -->
+
+       <!--    <requestFocus />   -->
+<LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="3dp"
+            android:background="@layout/header_gradient"
+            android:gravity="right" >
+
+            
+
+<Button
+ 	    android:id="@+id/elegirFiltros"
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_alignParentLeft="true"
+ 	    android:layout_alignParentTop="true"
+ 	    android:text="@string/elegirFiltros"
+ 	    android:textColor="#FFFFFF" />
+ 
+ </LinearLayout>
+
+   	<ListView 
+   	    android:id="@+id/listView"
+   	    android:layout_below="@+id/elegirFiltros"
+        android:layout_height="fill_parent"
+        android:layout_width="match_parent"/>
+   	
+
+ 	
+
+ 	<TextView
+ 	    android:id="@+id/resultados"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_above="@+id/listView"
+ 	    android:layout_centerHorizontal="true"
+ 	    android:text="@string/resultados" 
+ 	    android:textColor="#000000" />
+ 
+</LinearLayout>
+
